@@ -7,7 +7,10 @@
 Kernel.puts("Welcome to Calculator!")
 
 Kernel.puts("What's the first numbner?")
-number1 = Kernel.gets()
+number1 = Kernel.gets().chomp()
 
-Kernel.puts(number1.chomp().inspect())
+Kernel.puts("What's the second number?")
+number2 = Kernel.gets().chomp()
+
+Kernel.puts(number1 + " " + number2)
 
