@@ -19,7 +19,7 @@
 #
 #END
 
-def concaterminator
+def concatenator
   array = ["bunch", "o", "strings"]
 
   iterator = 0

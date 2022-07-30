@@ -21,8 +21,18 @@
 #print array2
 
 
-array [1 ,2, 3, 4, 5, 6, 7]
+array = [1 ,2, 3, 4, 5, 6, 7]
 array2 = Array.new()
 
-dev every_other(array)
-  array.each
+def every_other(array, array2)
+  array.each_with_index do |value, index|
+    if index % 2 == 0
+      array2.push(value)
+    else
+      next
+    end
+  end
+  return array2
+end
+
+p every_other(array, array2)
